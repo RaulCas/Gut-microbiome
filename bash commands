@@ -1,0 +1,7 @@
+
+grep 'Bacteroidetes' G09001.sintax | awk '{FS=","} {print $5}' | cut -d "(" -f2 | cut -d ")" -f1 > Bacteroidetes_confidence_G09001.txt
+grep 'Firmicutes' G09001.sintax | awk '{FS=","} {print $5}' | cut -d "(" -f2 | cut -d ")" -f1 > Firmicutes_confidence_G09001.txt
+grep 'Proteobacteria' G09001.sintax | awk '{FS=","} {print $5}' | cut -d "(" -f2 | cut -d ")" -f1 > Proteobacteria_confidence_G09001.txt
+
+
+

@@ -17,3 +17,7 @@ merge_otu_tables.py -i G13027_json.biom,G13028_json.biom -o merged_otu_table.bio
 # Convert back to .txt
 
 biom convert -i merged_otu_table.biom -o OTU_table.merged.txt --to-tsv
+
+# Get some stats from the table
+
+usearch -otutab_stats OTU_table.merged.txt -output report.txt

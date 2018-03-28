@@ -25,5 +25,5 @@ usearch -alpha_div_rare otutab.txt -output rare.txt
 usearch -sintax v3_4_otus.fa -db /rhome/rcastanera/bigdata/Kiel/Database/rdp_16s.udb -strand both -tabbedout v3_4_otus_sintax.txt -sintax_cutoff 0.8
 
 # Taxonomy summary reports
-$usearch -sintax_summary sintax.txt -otutabin otutab.txt -rank g -output genus_summary.txt
-$usearch -sintax_summary sintax.txt -otutabin otutab.txt -rank p -output phylum_summary.txt
+usearch -sintax_summary sintax.txt -otutabin otutab.txt -rank g -output genus_summary.txt
+usearch -sintax_summary sintax.txt -otutabin otutab.txt -rank p -output phylum_summary.txt

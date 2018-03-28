@@ -2,7 +2,7 @@
 
 ################################################################
 #
-# USAGE: bash 16Spipeline_v1_v2.sh R1.fastq R2.fastq indexname
+# USAGE: bash 16Spipeline_v1_v2.sh R1.fastq R2.fastq Sample_name
 #
 ################################################################
 

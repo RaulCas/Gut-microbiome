@@ -7,7 +7,7 @@
 
 # STEP 1: Create OTU Tables: 
 
-usearch -otutab /bigdata/castaneralab/rcastanera/Kiel/G09001/G09002.all.fasta -otus otus.fa -otutabout G09001_otutab.txt -mapout G09001_map.txt
+for i in *.clean.fasta; do usearch -otutab "$i" -otus otus.fa -otutabout "$i"+_otutab.txt -mapout "$i"+_map.txt; done
 
 # STEP 2: Normalize to 10,000 reads 
 

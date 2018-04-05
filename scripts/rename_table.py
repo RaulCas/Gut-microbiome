@@ -10,7 +10,7 @@ for filename in os.listdir("."):
 		working=open(filename, 'r')
 		outfile=open(filename+"_renamed", 'w')
 		newfilename=str(filename.split('-')[0])
-		newheader="OTU ID "+str(newfilename)
+		newheader="OTU ID"+'\t'+str(newfilename)
 		outfile.write(newheader+'\n')
 		for line in working.readlines()[1:]:
 			outfile.write(line)

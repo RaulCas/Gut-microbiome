@@ -15,7 +15,7 @@ Dependencies:
 
 
 
-USAGE:
+Usage:
 
 1- Run the first step of the pipeline on paired reads to obtain clean sequences:
 

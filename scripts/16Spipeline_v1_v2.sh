@@ -43,9 +43,9 @@ usearch -fastx_uniques clean_q20_280_345.fasta -fastaout uniques.fasta -sizeout 
 
 # Step 7 annotate and summarize (all) sequences
 
-usearch -sintax clean_q20_280_345.fasta -db /rhome/rcastanera/bigdata/Kiel/Database/rdp_16s.udb -tabbedout clean_q20_280_345.sintax -strand both -sintax_cutoff 0.8;
+#usearch -sintax clean_q20_280_345.fasta -db /rhome/rcastanera/bigdata/Kiel/Database/rdp_16s.udb -tabbedout clean_q20_280_345.sintax -strand both -sintax_cutoff 0.8;
 
-usearch -sintax_summary clean_q20_280_345.sintax -output phylum_summary.txt -rank p;
+#usearch -sintax_summary clean_q20_280_345.sintax -output phylum_summary.txt -rank p;
 
 
 # Step 8 rename file and copy sequences to common fasta folder

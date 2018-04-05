@@ -11,6 +11,7 @@ Dependencies:
 - qimee
 - seqtk
 - biom-format
+- SLURM
 
 
 

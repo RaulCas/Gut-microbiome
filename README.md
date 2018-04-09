@@ -30,3 +30,5 @@ bash 16Spipeline_v3_v4.sh R1.fastq R2.fastq Sample_name   ---- For v3-v4 region
 
 4- Run the rest of commands of "clean_to_OTUS.sh" in batch.
 
+5- After obtaining OTU abundances, diversity analyses, etc, run "pair_samples.py" to compare results of the different primer sets
+

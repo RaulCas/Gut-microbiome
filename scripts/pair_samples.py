@@ -1,4 +1,13 @@
 
+#==============================================================================================
+# Script for merging results according to sample pairing. Requires:
+#
+#  -  paired : file with sample pairing information separated by tab:  Sample1	Samplex
+#  -  results of each primer set in different files (v12 data and v34 data)
+#
+#==============================================================================================
+
+
 v12_file=open('v12data', 'r')
 v34_file=open('v34data', 'r')
 

@@ -5,10 +5,6 @@
 # Create final OTU TABLE and run diversity analyses
 # =================================================
 
-# Merge all otu tables into single one using "merge_OTU_tables.sh"
-
-bash merge_OTU_tables.sh 
-
 
 # Alpha diversity
 usearch -alpha_div otutab.txt -output alpha.txt

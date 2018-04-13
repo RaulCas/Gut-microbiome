@@ -30,11 +30,11 @@ bash remove_contaminants.sh
 
 3- Run steps 1 to 9 of "clean_to_OTUS.sh" in batch.
 
-4- Manually prepare and run the command of step 10 in  "clean_to_OTUS.sh".
+4- Manually prepare and run the step 10 command of  "clean_to_OTUS.sh".
 
 5- Run the rest of commands of "clean_to_OTUS.sh" in batch.
 
-6- Run the diversity analysis commands
+6- Run the diversity analysis commands (run_diversity.sh)
 
 7- After obtaining OTU abundances, diversity analyses, etc, run "pair_samples.py" to compare results of the different primer sets
 

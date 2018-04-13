@@ -10,7 +10,6 @@ Dependencies:
 - usearch/10
 - qimee
 - seqtk
-- biom-format
 - SLURM
 
 

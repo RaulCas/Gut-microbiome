@@ -20,15 +20,15 @@
 
    - For v1-v2 region:
 
-    *bash 16Spipeline_v1_v2.sh R1.fastq R2.fastq Sample_name*   
+    bash 16Spipeline_v1_v2.sh R1.fastq R2.fastq Sample_name   
 
    - For v3-v4 region:
 
-    *bash 16Spipeline_v3_v4.sh R1.fastq R2.fastq Sample_name*   
+    bash 16Spipeline_v3_v4.sh R1.fastq R2.fastq Sample_name   
 
 2- Place all sintax and clean fastas in the same folder and remove contaminants (only if necessary):
 
-*bash remove_contaminants.sh*
+    bash remove_contaminants.sh
 
 3- Run steps 1 to 9 of "clean_to_OTUS.sh" in batch.
 

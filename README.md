@@ -2,7 +2,7 @@
 
 
 
-## Dependencies:
+### Dependencies:
 
 - fastqc
 - flash
@@ -14,7 +14,7 @@
 
 
 
-## Usage:
+### Usage:
 
 1- Run the first step of the pipeline on paired reads to obtain clean sequences:
 

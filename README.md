@@ -24,11 +24,17 @@ bash 16Spipeline_v1_v2.sh R1.fastq R2.fastq Sample_name   ---- For v1-v2 region
 
 bash 16Spipeline_v3_v4.sh R1.fastq R2.fastq Sample_name   ---- For v3-v4 region
 
-2- Run steps 1 to 9 of "clean_to_OTUS.sh" in batch.
+2- Place all sintax and clean fastas in the same folder and remove contaminants (only if necessary):
 
-3- Manually prepare and run the command of step 10 in  "clean_to_OTUS.sh".
+bash remove_contaminants.sh
 
-4- Run the rest of commands of "clean_to_OTUS.sh" in batch.
+3- Run steps 1 to 9 of "clean_to_OTUS.sh" in batch.
 
-5- After obtaining OTU abundances, diversity analyses, etc, run "pair_samples.py" to compare results of the different primer sets
+4- Manually prepare and run the command of step 10 in  "clean_to_OTUS.sh".
+
+5- Run the rest of commands of "clean_to_OTUS.sh" in batch.
+
+6- Run the diversity analysis commands
+
+7- After obtaining OTU abundances, diversity analyses, etc, run "pair_samples.py" to compare results of the different primer sets
 

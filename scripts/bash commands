@@ -1,13 +1,13 @@
 
 
-# Obtain confidence mapping values from .index files
+# Obtain confidence mapping values from .sintax files
 
 grep 'Bacteroidetes' G09001.sintax | awk '{FS=","} {print $5}' | cut -d "(" -f2 | cut -d ")" -f1 > Bacteroidetes_confidence_G09001.txt
 grep 'Firmicutes' G09001.sintax | awk '{FS=","} {print $5}' | cut -d "(" -f2 | cut -d ")" -f1 > Firmicutes_confidence_G09001.txt
 grep 'Proteobacteria' G09001.sintax | awk '{FS=","} {print $5}' | cut -d "(" -f2 | cut -d ")" -f1 > Proteobacteria_confidence_G09001.txt
 
 
-# Remove contaminants from .clean.fasta files in low-input DNA libraries
+# Remove contaminants from .clean.sintax files in low-input DNA libraries
 
 for i in *.clean.sintax; do grep -v -E 'Shewanella|Halomonas' "$i" > "$i"_filtered; done;
 for i in *.clean.sintax; do grep -E 'Shewanella|Halomonas' "$i" > "$i"_discarded; done;

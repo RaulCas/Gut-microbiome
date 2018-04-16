@@ -3,15 +3,16 @@
 # Script for merging results according to sample pairing. Requires:
 #
 #  -  paired : file with sample pairing information separated by tab:  Sample1	Samplex
-#  -  results of each primer set in different files (v12 data and v34 data)
-#
+#  -  Requires the output tables of usearch "sintax_summary" command (v12 data and v34 data) .
+#     Transpose the tables before running the script    
 #==============================================================================================
 
-
+# Read transposed tables with the relative abundances and sample info
 v12_file=open('v12data', 'r')
 v34_file=open('v34data', 'r')
 
-paired=open('paired', 'r')
+# Read the file with sample-to-sample info
+paired=open('paired', 'r')   
 
 loop1=v12_file.readlines()
 loop2=v34_file.readlines()

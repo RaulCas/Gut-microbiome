@@ -17,6 +17,10 @@ paired=open('paired', 'r')
 loop1=v12_file.readlines()
 loop2=v34_file.readlines()
 
+# Print header
+print str(loop1[0]).strip()+'\t'+str(loop2[0]).strip()
+
+# Match the info and print
 for line in paired.readlines()[1:]:
 	line=line.strip()
 	sample_id1=str(line.split('\t')[0]) # v34
